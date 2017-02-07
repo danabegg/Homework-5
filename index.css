@@ -14,7 +14,7 @@ p {
 }
 .bg-dark {
   background-color: #222222;
-  color: white;
+  color: black;
 }
 }
 .navbar-default {
@@ -36,7 +36,7 @@ header {
   background-position: center;
   background-image: url('../img/header.jpg');
   text-align: center;
-  color: white;
+  color: black;
 }
 header .header-content {
   position: relative;

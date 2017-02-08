@@ -9,7 +9,6 @@
 </head>
 
 
-
 <body>
 
         <header class="jumbotron hero-spacer">
@@ -41,7 +40,7 @@
                         <p>
                           
         <input type="radio" name="pizzaType" value="meatLover" onclick="calculateTotal()"/> Cheese Lover $6.00<br />
-        <button onclick="foo()">add to order</button>
+        <button onclick="foo()">Add to order</button>
                         </p>
                     </div>
                 </div>
@@ -57,7 +56,7 @@
                          
                         </p>
                         <input type="radio" name="pizzaType" value="supreme" onclick="calculateTotal()"/> Pepperoni Supreme $6.00<br />
-                        <button onclick="foo()">add to order</button>
+                        <button onclick="foo()">Add to order</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,7 @@
                            
                         </p>
                         <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Veggie Lover $6.00<br />
-                        <button onclick="foo()">add to order</button>
+                        <button onclick="foo()">Add to order</button>
                     </div>
                 </div>
             </div>
@@ -86,7 +85,7 @@
                         <p>
                         </p>
                         <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Supreme Flavor $6.00<br />
-                        <button onclick="foo()">add to order</button>
+                        <button onclick="foo()">Add to order</button>
                         
                         
                   
@@ -97,12 +96,7 @@
             
             <div class="caption">
             <center><h3>YOUR TOTAL COMES TO....</h3></center>
-            <center><p>Your total will be displayed below</p></center>
-                        <p>
-                        <center><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></center>
-                        </p>
-                        
-                         <body>
+            
         <script>
             function foo() {
                 current = document.getElementById('Total').innerHTML;
@@ -112,8 +106,10 @@
             
         </script>
 
-        <h1>Your payment</h1>
+     
         <p id="Total">0</p>
+        <button onClick="clear()">Clear</button
+        
       
 
                         </body>
@@ -132,10 +128,10 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
+   
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+    
     <script src="js/bootstrap.min.js"></script>
 
 </body>

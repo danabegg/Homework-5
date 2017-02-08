@@ -9,6 +9,7 @@
 </head>
 
 
+
 <body>
 
         <header class="jumbotron hero-spacer">
@@ -39,7 +40,8 @@
                         <p>Add another layer of delicious gooey cheese to make your pizza complete!</p>
                         <p>
                           
-        <input type="radio" name="pizzaType" value="meatLover" onclick="calculateTotal()"/> Cheese Lover $5.50<br />
+        <input type="radio" name="pizzaType" value="meatLover" onclick="calculateTotal()"/> Cheese Lover $6.00<br />
+        <button onclick="foo()">add to order</button>
                         </p>
                     </div>
                 </div>
@@ -54,7 +56,8 @@
                         <p>
                          
                         </p>
-                        <input type="radio" name="pizzaType" value="supreme" onclick="calculateTotal()"/> Pepperoni Supreme $6.50<br />
+                        <input type="radio" name="pizzaType" value="supreme" onclick="calculateTotal()"/> Pepperoni Supreme $6.00<br />
+                        <button onclick="foo()">add to order</button>
                     </div>
                 </div>
             </div>
@@ -68,7 +71,8 @@
                         <p>
                            
                         </p>
-                        <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Veggie Lover $4.50<br />
+                        <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Veggie Lover $6.00<br />
+                        <button onclick="foo()">add to order</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +85,11 @@
                         <p>Add another layer of warm homemade sauce to make your pizza complete!</p>
                         <p>
                         </p>
-                        <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Supreme Flavor $4.50<br />
+                        <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Supreme Flavor $6.00<br />
+                        <button onclick="foo()">add to order</button>
+                        
+                        
+                  
                         
                     </div>
                 </div>
@@ -93,7 +101,23 @@
                         <p>
                         <center><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></center>
                         </p>
-                    </div>
+                        
+                         <body>
+        <script>
+            function foo() {
+                current = document.getElementById('Total').innerHTML;
+                var future = +current + 6;
+                document.getElementById('Total').innerHTML = future;
+            }
+            
+        </script>
+
+        <h1>Your payment</h1>
+        <p id="Total">0</p>
+      
+
+                        </body>
+                        </div>
         <!-- /.row -->
 
         <hr>

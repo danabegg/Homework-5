@@ -86,10 +86,7 @@
                         <p>
                         </p>
                         <input type="radio" name="pizzaType" value="veggieLover" onclick="calculateTotal()"/> Supreme Flavor $6.00<br />
-                        <button onclick="foo()">Add to order</button>
-                        
-                        
-                  
+                        <button onclick="foo()">Add to order</button>   
                         
                     </div>
                 </div>
@@ -110,14 +107,34 @@
                 document.getElementById("customorder1").innerHTML = txt1; 
             }
 
+            function myFunction2() {
+                txt2 = document.getElementById("customorder").value;
+                document.getElementById("Tax").innerHTML = txt2;
+            }
 
+            function myFunction3() {
+                txt3 = document.getElementById("Veggie").value;
+                document.getElementById("addcustom3").innerHTML = txt3;
+            }
+
+            function myFunction4() {
+            txt4 = document.getElementById("Sauce").value;
+            document.getElementById("addcustom4").innerHTML = txt4;
+        }
+        
         </script>
 
+<script>
+
+</script>
 
 
 <body>
 
-	<h4>Click to add your toppings, or type them in the textbox below.</h4>
+
+
+<h4>Click to add your toppings, or type them in the textbox below.</h4>
+
 
 	<center><ul></center>
 		<center><li>Cheese Lover</li></center>
@@ -126,11 +143,6 @@
 		<center><li>Supreme Flavor</li></center>
   <center></ul></center>
   
-<p>
-
-
-</p>   
-
     <h6>Type your toppings into the textbox below with commas between each one.</h6>
 <div class="container">
     <div class="col-sm-12">
@@ -142,18 +154,9 @@
         </div>
     </div>
 </div>
-
-     
-
-  
 	</body>
 
-    
-     
         <p id="Total">0</p>
-
-
-
 
         <button id= "CL" onclick="CL()">
             Clear</button>
@@ -165,18 +168,9 @@
             console.log("CL");
             document.getElementById("Total").innerHTML = "0";
 
-}
-  
+            }
 
         </script>
-
-
-<p>
-
-
-
-</p>    
-
 <body>
 
 
@@ -191,18 +185,18 @@
       <thead>
          <tr>
             <th>Pizza Topping</th>
-            <th>Price</th>
+            <th>Tax</th>
             <th>Total</th>
          </tr>
       </thead>
-      
+     
       <tbody>
          <tr>
             <td id="customorder1"></td>
-            <td>?</td>
-            <td>?</td>
+            <td id="MyFunctionA"></td>
+            <td id="Total"></td>
          </tr>
-
+       
       </tbody>
       
    </table>
@@ -231,6 +225,60 @@
 
     
     <script src="js/bootstrap.min.js"></script>
+
+<script>
+
+var countA = 0;
+function myFunctionA(){
+countA++;
+document.getElementById("Tax").innerHTML = countA;
+document.getElementById("Total").innerHTML = "$" + countA
+}
+
+var countB = 0;
+function myFunctionB(){
+countB++;
+document.getElementById("Tax").innerHTML = countB;
+document.getElementById("Total").innerHTML = "$" + countB
+}
+
+var countC = 0;
+function myFunctionC(){
+countC++;
+document.getElementById("Tax").innerHTML = countC;
+document.getElementById("Total").innerHTML = "$" + countC
+}
+
+
+
+var counter = 0;
+var a = 0
+var add = function(valueToAdd){
+        a += valueToAdd;
+        b = a * 0.12
+        c = a + b
+        document.getElementById('Subtotal').innerHTML = a;
+        document.getElementById('Tax').innerHTML = b;
+        document.getElementById('Total').innerHTML = c;
+		}
+
+function myFunctionResetTotals(){
+    var a = 0;
+    var b = 0;
+    var c = 0;
+    document.getElementById("Subtotal").innerHTML = a;
+    document.getElementById("Tax").innerHTML = b;
+    document.getElementById("Total").innerHTML = c;
+    }
+
+function myFunctionThanks(){
+    alert('Your order has been submitted - Thank You!');
+}
+
+</script>
+
+
+
 
 </body>
 
